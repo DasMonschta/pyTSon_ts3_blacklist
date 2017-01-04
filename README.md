@@ -1,2 +1,7 @@
-# pyTSon_ts3_blacklist
-A temaspeak 3.1 pyTSon plugin that will kick or ban users with bad names.
+# Blacklist
+
+A teamspeak 3.1 pyTSon plugin that helps to get rid of users with bad nicknames.
+
+Optimized for the GommeHD TS. 
+
+Download the latest version [here](https://github.com/Metvernichter/pyTSon_ts3_blacklist/releases)
