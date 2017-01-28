@@ -1,7 +1,8 @@
 from ts3plugin import ts3plugin, PluginHost
-from ts3 import getPluginPath
+from ts3lib import getPluginPath
 from os import path
-import ts3, ts3defines, os.path,  pickle, re
+import ts3defines, os.path,  pickle, re
+import ts3lib as ts3
 
 from PythonQt.QtSql import QSqlDatabase
 from PythonQt.QtGui import *
@@ -111,7 +112,7 @@ class SettingsDialog(QDialog):
     def __init__(self, blacklist, parent=None):
         self.bl = blacklist
         super(QDialog, self).__init__(parent)
-        setupUi(self, os.path.join(ts3.getPluginPath(), "pyTSon", "ressources", "blacklist", "blacklist.ui"))
+        setupUi(self, os.path.join(ts3.getPluginPath(), "pyTSon", "scripts", "blacklist", "blacklist.ui"))
         self.setWindowTitle("Blacklist by Luemmel")
 
         self.btn_add.clicked.connect(self.add)
